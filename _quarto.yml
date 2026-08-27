@@ -5,7 +5,7 @@ project:
 website:
   title: "Matias Parra"
   navbar:
-    title: "MATIAS PARRA"
+    title: false
     left: []
     right:
       - href: trayectoria.qmd
