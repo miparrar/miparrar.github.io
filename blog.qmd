@@ -1,0 +1,14 @@
+---
+title: "Blog"
+format:
+  html:
+    title-block-style: none
+---
+
+::: {.page-shell}
+<div class="page-label">&gt; blog</div>
+
+# Blog
+
+Notas, ensayos y lecturas sobre ciencias sociales, datos, tecnología, investigación y economía política.
+:::
