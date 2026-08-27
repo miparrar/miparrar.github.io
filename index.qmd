@@ -1,0 +1,26 @@
+---
+title: "Matias Parra"
+pagetitle: "Matias Parra"
+format:
+  html:
+    title-block-style: none
+---
+
+::: {.home-shell}
+::: {.home-intro}
+<div class="home-kicker">Ciencias sociales, datos y programación.</div>
+
+<div class="home-copy">
+Trabajo entre investigación social y construcción de herramientas: proceso datos, automatizo flujos y desarrollo formas de explorar, analizar y comunicar información.
+</div>
+:::
+
+::: {.home-work}
+<div class="section-label">&gt; trabajo</div>
+
+<div class="project-list">
+<span class="project-item">CensoLab</span>
+<span class="project-item">BCCh Studio</span>
+</div>
+:::
+:::
