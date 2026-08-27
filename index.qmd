@@ -8,6 +8,8 @@ format:
 
 ::: {.home-shell}
 ::: {.home-intro}
+<div class="home-name">Matias Parra</div>
+
 <div class="home-kicker">Ciencias sociales, datos y programación.</div>
 
 <div class="home-copy">
