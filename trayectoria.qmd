@@ -1,0 +1,14 @@
+---
+title: "Trayectoria"
+format:
+  html:
+    title-block-style: none
+---
+
+::: {.page-shell}
+<div class="page-label">&gt; trayectoria</div>
+
+# Trayectoria
+
+Esta sección reunirá de forma sintética mi experiencia profesional y académica, con énfasis en la continuidad entre investigación social, trabajo con datos y construcción de herramientas.
+:::
