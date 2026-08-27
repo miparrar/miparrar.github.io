@@ -8,9 +8,9 @@ format:
 
 ::: {.home-shell}
 ::: {.home-intro}
-<div class="home-name">Matias Parra</div>
+<div class="home-name">Matías Parra</div>
 
-<div class="home-kicker">Ciencias sociales, datos y programación.</div>
+<div class="home-kicker" id="home-kicker" data-text="Ciencias sociales, datos y programación">Ciencias sociales, datos y programación</div>
 
 <div class="home-copy">
 Trabajo entre investigación social y construcción de herramientas: proceso datos, automatizo flujos y desarrollo formas de explorar, analizar y comunicar información.
@@ -18,11 +18,43 @@ Trabajo entre investigación social y construcción de herramientas: proceso dat
 :::
 
 ::: {.home-work}
-<div class="section-label">&gt; trabajo</div>
+<div class="section-label">&gt; proyectos destacados</div>
 
 <div class="project-list">
-<span class="project-item">CensoLab</span>
-<span class="project-item">BCCh Studio</span>
+<a class="project-item" href="https://censolab.cl/" aria-label="Visitar CensoLab">
+<span class="project-name">CensoLab</span>
+<span class="project-description">Explora información del Censo 2024 con preguntas en lenguaje natural, cálculos y visualizaciones</span>
+<span class="project-arrow" aria-hidden="true">↗</span>
+</a>
 </div>
 :::
 :::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const kicker = document.querySelector("#home-kicker");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!kicker || reduceMotion) return;
+
+  const text = Array.from(kicker.dataset.text || kicker.textContent);
+  let position = 0;
+
+  kicker.setAttribute("aria-label", text.join(""));
+  kicker.textContent = "";
+  kicker.classList.add("is-typing");
+
+  const typeNextCharacter = () => {
+    kicker.textContent += text[position];
+    position += 1;
+
+    if (position < text.length) {
+      window.setTimeout(typeNextCharacter, 55);
+    } else {
+      window.setTimeout(() => kicker.classList.remove("is-typing"), 900);
+    }
+  };
+
+  window.setTimeout(typeNextCharacter, 450);
+});
+</script>

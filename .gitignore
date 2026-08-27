@@ -1,0 +1,5 @@
+/.quarto/
+**/*.quarto_ipynb
+/.agents/
+/AGENTS.md
+/AGENTS.html
