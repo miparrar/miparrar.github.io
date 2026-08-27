@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Matias Parra"
+  navbar:
+    title: "MATIAS PARRA"
+    left: []
+    right:
+      - href: trayectoria.qmd
+        text: Trayectoria
+      - href: blog.qmd
+        text: Blog
+      - href: https://github.com/miparrar
+        text: GitHub
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true
