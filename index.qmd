@@ -10,11 +10,17 @@ format:
 ::: {.home-intro}
 <div class="home-name">Matías Parra</div>
 
-<div class="home-kicker" id="home-kicker" data-text="Ciencias sociales, datos y programación">Ciencias sociales, datos y programación</div>
+<h1 class="home-kicker">Ciencias sociales, datos y programación</h1>
 
-<div class="home-copy">
-Trabajo entre investigación social y construcción de herramientas: proceso datos, automatizo flujos y desarrollo formas de explorar, analizar y comunicar información.
+<div class="home-stack">R · Make · LLMs</div>
+
+<div class="home-copy home-rotator">
+<span class="visually-hidden">Soy antropólogo. Me interesa resolver problemas complejos con datos. Construyo sistemas reproducibles y trazables. Exploro nuevas formas de investigar con modelos de lenguaje.</span>
+<span id="home-rotator-text" aria-hidden="true"></span>
 </div>
+<noscript>
+<div class="home-copy">Soy antropólogo</div>
+</noscript>
 :::
 
 ::: {.home-work}
@@ -29,32 +35,66 @@ Trabajo entre investigación social y construcción de herramientas: proceso dat
 </div>
 :::
 :::
-
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const kicker = document.querySelector("#home-kicker");
+const startTyping = () => {
+  const rotator = document.querySelector(".home-rotator");
+  const rotatorText = document.querySelector("#home-rotator-text");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const phrases = [
+    "Soy antropólogo",
+    "Me interesa resolver problemas complejos con datos",
+    "Construyo sistemas reproducibles y trazables",
+    "Exploro nuevas formas de investigar con modelos de lenguaje"
+  ];
 
-  if (!kicker || reduceMotion) return;
+  if (!rotator || !rotatorText) return;
 
-  const text = Array.from(kicker.dataset.text || kicker.textContent);
-  let position = 0;
+  if (reduceMotion) {
+    rotatorText.textContent = phrases[0];
+    return;
+  }
 
-  kicker.setAttribute("aria-label", text.join(""));
-  kicker.textContent = "";
-  kicker.classList.add("is-typing");
+  let phraseIndex = 0;
+  let characterPosition = 0;
+  let isDeleting = false;
 
   const typeNextCharacter = () => {
-    kicker.textContent += text[position];
-    position += 1;
+    const phrase = phrases[phraseIndex];
 
-    if (position < text.length) {
-      window.setTimeout(typeNextCharacter, 55);
-    } else {
-      window.setTimeout(() => kicker.classList.remove("is-typing"), 900);
+    if (isDeleting) {
+      characterPosition -= 1;
+      rotatorText.textContent = phrase.slice(0, characterPosition);
+
+      if (characterPosition === 0) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        isDeleting = false;
+        window.setTimeout(typeNextCharacter, 350);
+        return;
+      }
+
+      window.setTimeout(typeNextCharacter, 28);
+      return;
     }
+
+    characterPosition += 1;
+    rotatorText.textContent = phrase.slice(0, characterPosition);
+
+    if (characterPosition === phrase.length) {
+      isDeleting = true;
+      window.setTimeout(typeNextCharacter, 2200);
+      return;
+    }
+
+    window.setTimeout(typeNextCharacter, 45);
   };
 
+  rotatorText.classList.add("is-typing");
   window.setTimeout(typeNextCharacter, 450);
-});
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", startTyping);
+} else {
+  startTyping();
+}
 </script>
