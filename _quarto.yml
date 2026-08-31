@@ -6,7 +6,9 @@ website:
   title: "Matias Parra"
   navbar:
     title: false
-    left: []
+    left:
+      - href: index.qmd
+        text: Inicio
     right:
       - href: trayectoria.qmd
         text: Trayectoria
