@@ -208,6 +208,201 @@ main.content {
   line-height: 1.7;
 }
 
+
+.trajectory-intro {
+  max-width: 680px;
+  margin-bottom: 4.5rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.trajectory-section {
+  max-width: 680px;
+  margin-bottom: 3.5rem;
+}
+
+.page-shell h2 {
+  margin: 4rem 0 1.75rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.page-shell h2::before {
+  content: "> ";
+  color: var(--accent);
+}
+
+.timeline {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 1.55rem;
+  bottom: -2.5rem;
+  left: 0.22rem;
+  border-left: 1px solid var(--line);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.timeline-period,
+.education-period {
+  padding-left: 1.25rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.timeline-content,
+.education-content {
+  min-width: 0;
+}
+
+.timeline-content h3,
+.education-content h3 {
+  margin: 0 0 0.55rem;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.timeline-content p,
+.education-content p {
+  margin: 0.7rem 0 0;
+  font-size: 0.86rem;
+}
+
+.timeline-content ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
+.education-list {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  font-size: 0.76rem;
+  line-height: 1.2;
+}
+
+.trajectory-note,
+.trajectory-contact {
+  max-width: 680px;
+  padding: 1rem 1.25rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.trajectory-contact {
+  margin-bottom: 2rem;
+}
+
+
+
+
+.trajectory-page {
+  max-width: 1120px;
+}
+
+.trajectory-layout {
+  display: grid;
+  grid-template-columns: minmax(9rem, 12rem) minmax(0, 820px);
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.trajectory-main {
+  min-width: 0;
+}
+
+.trajectory-toc {
+  position: sticky;
+  top: 6rem;
+  padding-top: 10vh;
+}
+
+.trajectory-toc-label {
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+}
+
+.trajectory-toc-label::first-letter {
+  color: var(--accent);
+}
+
+.trajectory-toc ul {
+  margin: 0;
+  padding: 0 0 0 0.9rem;
+  border-left: 1px solid var(--line);
+  list-style: none;
+}
+
+.trajectory-toc li {
+  margin: 0.45rem 0;
+}
+
+.trajectory-toc a {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.trajectory-toc a:hover,
+.trajectory-toc a:focus-visible {
+  color: var(--accent);
+}
+
 a {
   color: inherit;
 }
@@ -259,11 +454,73 @@ a {
     grid-row: 1;
   }
 
+  .trajectory-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .trajectory-toc {
+    position: static;
+    padding-top: 0;
+    margin-bottom: 3.5rem;
+  }
+
+  .trajectory-toc ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 0 0 1rem;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .trajectory-toc li {
+    margin: 0;
+  }
+
+  .trajectory-toc a {
+    font-size: 0.75rem;
+  }
+
+
   .page-shell {
     padding: 8vh 1.25rem 4rem;
   }
 }
 
+
+
+@media (max-width: 720px) {
+  .trajectory-intro {
+    margin-bottom: 3.5rem;
+  }
+
+  .page-shell h2 {
+    margin-top: 3rem;
+  }
+
+  .timeline-item,
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+    padding-left: 1.25rem;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    left: 0.22rem;
+  }
+
+  .timeline-item::after {
+    left: 0;
+  }
+
+  .timeline-period,
+  .education-period {
+    padding-left: 0;
+  }
+}
 
 .footer {
   background: var(--bg) !important;
