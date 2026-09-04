@@ -5,10 +5,134 @@ format:
     title-block-style: none
 ---
 
-::: {.page-shell}
+::: {.page-shell .trajectory-page}
+::: {.trajectory-layout}
+::: {.trajectory-toc role="navigation" aria-label="Índice de trayectoria"}
+<div class="trajectory-toc-label">&gt; en esta página</div>
+
+- [Perfil](#perfil)
+- [Experiencia](#experiencia)
+- [Formación](#formación)
+- [Herramientas y temas](#herramientas-y-temas)
+- [Actualmente](#actualmente)
+- [Contacto](#contacto)
+:::
+
+::: {.trajectory-main}
 <div class="page-label">&gt; trayectoria</div>
 
 # Trayectoria
 
-Esta sección reunirá de forma sintética mi experiencia profesional y académica, con énfasis en la continuidad entre investigación social, trabajo con datos y construcción de herramientas.
+::: {.trajectory-intro}
+Una síntesis de mi recorrido profesional y académico, con énfasis en la continuidad entre investigación social, trabajo con datos y construcción de herramientas.
+:::
+
+<!--
+  Plantilla de contenido
+  Reemplaza los textos entre corchetes y elimina los bloques que no necesites.
+-->
+
+## Perfil
+
+::: {.trajectory-section}
+Soy [profesión o especialidad]. Mi trabajo se concentra en [áreas principales] y busca [problema, propósito o pregunta que orienta tu trabajo].
+:::
+
+## Experiencia
+
+::: {.timeline}
+
+::: {.timeline-item}
+<div class="timeline-period">[AAAA] — presente</div>
+
+::: {.timeline-content}
+### [Cargo o rol]
+
+**[Organización, proyecto o institución]** · [Ciudad / modalidad]
+
+Descripción breve del rol: [qué haces, con quién trabajas y qué tipo de problemas abordas].
+
+- [Responsabilidad o resultado relevante]
+- [Responsabilidad o resultado relevante]
+:::
+:::
+
+::: {.timeline-item}
+<div class="timeline-period">[AAAA] — [AAAA]</div>
+
+::: {.timeline-content}
+### [Cargo o rol anterior]
+
+**[Organización, proyecto o institución]** · [Ciudad / modalidad]
+
+Descripción breve del rol: [qué cambió, construiste o aprendiste].
+
+- [Responsabilidad o resultado relevante]
+- [Responsabilidad o resultado relevante]
+:::
+:::
+
+::: {.timeline-item}
+<div class="timeline-period">[AAAA] — [AAAA]</div>
+
+::: {.timeline-content}
+### [Otra experiencia]
+
+**[Organización, proyecto o institución]** · [Ciudad / modalidad]
+
+Descripción breve de la experiencia.
+:::
+:::
+
+:::
+
+## Formación
+
+::: {.education-list}
+
+::: {.education-item}
+<div class="education-period">[AAAA] — [AAAA]</div>
+
+<div class="education-content">
+### [Grado, título o programa]
+
+**[Institución]** · [Ciudad]
+
+[Mención, línea de investigación o información adicional]
+</div>
+:::
+
+::: {.education-item}
+<div class="education-period">[AAAA]</div>
+
+<div class="education-content">
+### [Curso, certificación o formación complementaria]
+
+**[Institución]**
+</div>
+:::
+
+:::
+
+## Herramientas y temas
+
+::: {.trajectory-section}
+::: {.tag-list}
+[R]{.tag} [Python]{.tag} [SQL]{.tag} [Make]{.tag} [Modelos de lenguaje]{.tag} [Investigación social]{.tag} [Visualización]{.tag}
+:::
+:::
+
+## Actualmente
+
+::: {.trajectory-note}
+Estoy trabajando en [proyecto, investigación o pregunta actual]. Me interesa especialmente [tema o dirección futura].
+:::
+
+## Contacto
+
+::: {.trajectory-contact}
+Si quieres conversar sobre [temas de interés], puedes escribirme a [correo] o encontrarme en [enlace].
+:::
+:::
+:::
 :::
