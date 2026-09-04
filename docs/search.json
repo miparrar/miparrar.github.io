@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Matias Parra",
     "section": "",
-    "text": "Matías Parra\n\n\nCiencias sociales, datos y programación\n\n\nR · Make · LLMs\n\n\nSoy antropólogo. Me interesa resolver problemas complejos con datos. Construyo sistemas reproducibles y trazables. Exploro nuevas formas de investigar con modelos de lenguaje. \n\n\n\nSoy antropólogo\n\n\n\n\n\n&gt; proyectos destacados\n\n\n CensoLab Explora información del Censo 2024 con preguntas en lenguaje natural, cálculos y visualizaciones ↗"
+    "text": "Matías Parra\n\n\nCiencias sociales, datos y programación\n\n\nR · Make · LLMs\n\n\nSoy Antropólogo. Trabajo en procesamiento y análisis de datos. Construyo flujos de trabajo reproducibles y trazables. Exploro nuevas formas de investigar con modelos de lenguaje. \n\n\n\nSoy antropólogo\n\n\n\n\n\n&gt; proyectos destacados\n\n\n CensoLab Explora información del Censo 2024 con preguntas en lenguaje natural, cálculos y visualizaciones ↗"
   },
   {
     "objectID": "blog.html",
@@ -14,10 +14,45 @@
     "text": "&gt; blog\n\n\nBlog\nNotas, ensayos y lecturas sobre ciencias sociales, datos, tecnología, investigación y economía política."
   },
   {
-    "objectID": "trayectoria.html",
-    "href": "trayectoria.html",
+    "objectID": "trayectoria.html#perfil",
+    "href": "trayectoria.html#perfil",
     "title": "Trayectoria",
-    "section": "",
-    "text": "&gt; trayectoria\n\n\nTrayectoria\nEsta sección reunirá de forma sintética mi experiencia profesional y académica, con énfasis en la continuidad entre investigación social, trabajo con datos y construcción de herramientas."
+    "section": "Perfil",
+    "text": "Perfil\n\nSoy [profesión o especialidad]. Mi trabajo se concentra en [áreas principales] y busca [problema, propósito o pregunta que orienta tu trabajo]."
+  },
+  {
+    "objectID": "trayectoria.html#experiencia",
+    "href": "trayectoria.html#experiencia",
+    "title": "Trayectoria",
+    "section": "Experiencia",
+    "text": "Experiencia\n\n\n\n[AAAA] — presente\n\n\n[Cargo o rol]\n[Organización, proyecto o institución] · [Ciudad / modalidad]\nDescripción breve del rol: [qué haces, con quién trabajas y qué tipo de problemas abordas].\n\n[Responsabilidad o resultado relevante]\n[Responsabilidad o resultado relevante]\n\n\n\n\n\n[AAAA] — [AAAA]\n\n\n[Cargo o rol anterior]\n[Organización, proyecto o institución] · [Ciudad / modalidad]\nDescripción breve del rol: [qué cambió, construiste o aprendiste].\n\n[Responsabilidad o resultado relevante]\n[Responsabilidad o resultado relevante]\n\n\n\n\n\n[AAAA] — [AAAA]\n\n\n[Otra experiencia]\n[Organización, proyecto o institución] · [Ciudad / modalidad]\nDescripción breve de la experiencia."
+  },
+  {
+    "objectID": "trayectoria.html#formación",
+    "href": "trayectoria.html#formación",
+    "title": "Trayectoria",
+    "section": "Formación",
+    "text": "Formación\n\n\n\n[AAAA] — [AAAA]\n\n\n[Grado, título o programa]\n[Institución] · [Ciudad]\n[Mención, línea de investigación o información adicional]\n\n\n\n\n[AAAA]\n\n\n[Curso, certificación o formación complementaria]\n[Institución]"
+  },
+  {
+    "objectID": "trayectoria.html#herramientas-y-temas",
+    "href": "trayectoria.html#herramientas-y-temas",
+    "title": "Trayectoria",
+    "section": "Herramientas y temas",
+    "text": "Herramientas y temas\n\n\nR Python SQL Make Modelos de lenguaje Investigación social Visualización"
+  },
+  {
+    "objectID": "trayectoria.html#actualmente",
+    "href": "trayectoria.html#actualmente",
+    "title": "Trayectoria",
+    "section": "Actualmente",
+    "text": "Actualmente\n\nEstoy trabajando en [proyecto, investigación o pregunta actual]. Me interesa especialmente [tema o dirección futura]."
+  },
+  {
+    "objectID": "trayectoria.html#contacto",
+    "href": "trayectoria.html#contacto",
+    "title": "Trayectoria",
+    "section": "Contacto",
+    "text": "Contacto\n\nSi quieres conversar sobre [temas de interés], puedes escribirme a [correo] o encontrarme en [enlace]."
   }
 ]
