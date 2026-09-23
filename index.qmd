@@ -32,7 +32,7 @@ format:
 <span class="project-description">Explora información del Censo 2024 con preguntas en lenguaje natural, cálculos y visualizaciones</span>
 <span class="project-arrow" aria-hidden="true">↗</span>
 </a>
-<a class="project-item" href="https://connect.posit.cloud/miparrar/content/01a081a7-cfb9-5b45-0b53-29a9a00cf0b9" target="_blank" rel="noopener" aria-label="Visitar Atlas de la Crisis">
+<a class="project-item" href="https://miparrar-atlas-crisis.share.connect.posit.cloud/" target="_blank" rel="noopener" aria-label="Visitar Atlas de la Crisis">
 <span class="project-name">Atlas de la Crisis</span>
 <span class="project-description">Una curaduría de autores y lecturas para reconstruir distintas explicaciones de la crisis contemporánea</span>
 <span class="project-arrow" aria-hidden="true">↗</span>
